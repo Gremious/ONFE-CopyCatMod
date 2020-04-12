@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Animation loop="true" name="LeaSphere" frameDuration="70">
+  <Frame image="attacks/LeaSphere1.png"></Frame>
+  <Frame image="attacks/LeaSphere2.png"></Frame>
+  <Frame image="attacks/LeaSphere3.png"></Frame>
+</Animation>

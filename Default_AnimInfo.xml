@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Animations>
+	<Animation loop="true" name="Default_idle" frameDuration="140">
+	  <Frame image="char/Idle/Default_Idle1.png"></Frame>
+	  <Frame image="char/Idle/Default_Idle2.png"></Frame>
+	  <Frame image="char/Idle/Default_Idle3.png"></Frame>
+	  <Frame image="char/Idle/Default_Idle4.png"></Frame>
+	  <Frame image="char/Idle/Default_Idle5.png"></Frame>
+	  <Frame image="char/Idle/Default_Idle6.png"></Frame>
+	  <Frame image="char/Idle/Default_Idle7.png"></Frame>
+	  <Frame image="char/Idle/Default_Idle8.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_spawn" frameDuration="50">
+	  <Frame image="char/Spawn/Default_spawn1.png"></Frame>
+	  <Frame image="char/Spawn/Default_spawn2.png"></Frame>
+	  <Frame image="char/Spawn/Default_spawn3.png"></Frame>
+	  <Frame image="char/Spawn/Default_spawn4.png"></Frame>
+	  <Frame image="char/Spawn/Default_spawn5.png"></Frame>
+	  <Frame image="char/Spawn/Default_spawn6.png"></Frame>
+	  <Frame image="char/Spawn/Default_spawn7.png"></Frame>
+	  <Frame image="char/Spawn/Default_spawn8.png"></Frame>
+	  <Frame image="char/Spawn/Default_spawn9.png"></Frame>
+	</Animation>
+
+	<Animation loop="true" name="Default_dashing" frameDuration="100">
+	  <Frame image="char/Dashing/Default_dashing1.png"></Frame>
+	  <Frame image="char/Dashing/Default_dashing2.png"></Frame>
+	  <Frame image="char/Dashing/Default_dashing3.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_front" frameDuration="70">
+	  <Frame image="char/Default_front.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_back" frameDuration="70">
+	  <Frame image="char/Default_Back.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_hop" frameDuration="70">
+	  <Frame image="char/Default_hop.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_drop" frameDuration="70">
+	  <Frame image="char/Default_drop.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_cast01Start" frameDuration="80">
+	  <Frame image="char/Default_cast01Start1.png"></Frame>
+	  <Frame image="char/Default_cast01Start2.png"></Frame>
+	  <Frame image="char/Default_cast01Start3.png"></Frame>
+	  <Frame image="char/Default_cast01Start4.png"></Frame>
+	  <Frame image="char/Default_cast01Start5.png"></Frame>
+	  <Frame image="char/Default_cast01Start6.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_cast01Mid" frameDuration="70">
+		<Frame image="char/Default_cast01Mid.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_cast01End" frameDuration="70">
+		<Frame image="char/Default_cast01End.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_cast02Start" frameDuration="70">
+		<Frame image="char/Default_cast01Start1.png"></Frame>
+		<Frame image="char/Default_cast01Start2.png"></Frame>
+		<Frame image="char/Default_cast01Start3.png"></Frame>
+		<Frame image="char/Default_cast01Start4.png"></Frame>
+		<Frame image="char/Default_cast01Start5.png"></Frame>
+		<Frame image="char/Default_cast01Start6.png"></Frame>
+		<Frame image="char/Default_cast01Start7.png"></Frame>
+		<Frame image="char/Default_cast01Start8.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_cast02Mid" frameDuration="70">
+		<Frame image="char/Default_cast01Mid1.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_cast02End" frameDuration="70">
+		<Frame image="char/Default_cast01End1.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_cast03Start" frameDuration="70">
+		<Frame image="char/Default_cast01Start1.png"></Frame>
+		<Frame image="char/Default_cast01Start2.png"></Frame>
+		<Frame image="char/Default_cast01Start3.png"></Frame>
+		<Frame image="char/Default_cast01Start4.png"></Frame>
+		<Frame image="char/Default_cast01Start5.png"></Frame>
+		<Frame image="char/Default_cast01Start6.png"></Frame>
+		<Frame image="char/Default_cast01Start7.png"></Frame>
+		<Frame image="char/Default_cast01Start8.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_cast03Mid" frameDuration="70">
+		<Frame image="char/Default_cast01Mid1.png"></Frame>
+	</Animation>
+
+	<Animation loop="false" name="Default_cast03End" frameDuration="70">
+		<Frame image="char/Default_cast01End1.png"></Frame>
+	</Animation>
+</Animations>

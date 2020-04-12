@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Beings>
+  <Being beingID="The Default">
+    <Name>The Default</Name>
+    <Title>Loadout Name</Title>
+    <Tags>Campaign, Default, Unlock</Tags>
+    <Description>A ??????? who wants to TOUCH.</Description>
+    <Flavor>Flavor Text.</Flavor>
+    <Weapon>PlaceholderWeapon</Weapon>
+    <Health>1200</Health>
+    <MaxHealth>1200</MaxHealth>
+    <Money>20</Money>
+    <MaxMana>3</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.6</ManaRegen>
+    <ShuffleTime>2</ShuffleTime>
+    <InvulLength>0</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>ModSpell</Deck>
+    <Deck>ModSpell</Deck>
+    <Artifacts>SubTank</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Default" splashSprite="DefaultSplash"
+      startingBrands="None,None"></Stats>
+  </Being>
+</Beings>
