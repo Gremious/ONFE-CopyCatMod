@@ -1,26 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Beings>
-  <Being beingID="The Default">
-    <Name>The Default</Name>
-    <Title>Loadout Name</Title>
+  <Being beingID="Copycat">
+    <Name>Copycat</Name>
+    <Title>Copy</Title>
     <Tags>Campaign, Default, Unlock</Tags>
-    <Description>A ??????? who wants to TOUCH.</Description>
-    <Flavor>Flavor Text.</Flavor>
+    <Description>A mysterious traveler, lookin for Eden's riches to copy all for herself.</Description>
+    <Flavor>A snap of the fingers is all she needs.</Flavor>
     <Weapon>PlaceholderWeapon</Weapon>
-    <Health>1200</Health>
-    <MaxHealth>1200</MaxHealth>
-    <Money>20</Money>
-    <MaxMana>3</MaxMana>
+    <Health>900</Health>
+    <MaxHealth>900</MaxHealth>
+    <Money>33</Money>
+    <MaxMana>2</MaxMana>
     <BasicCooldown>0.1</BasicCooldown>
-    <ManaRegen>0.6</ManaRegen>
+    <ManaRegen>0.7</ManaRegen>
     <ShuffleTime>2</ShuffleTime>
-    <InvulLength>0</InvulLength>
-    <Defense>0</Defense>
-    <LerpTime>0.1</LerpTime>
+    <GracePeriod>0.03</GracePeriod>
+    <LerpTime>0.2</LerpTime>
     <Deck>ModSpell</Deck>
     <Deck>ModSpell</Deck>
     <Artifacts>SubTank</Artifacts>
-    <Stats localGunPointPos="30,30" animName="Default" splashSprite="DefaultSplash"
+    <Stats localGunPointPos="30,30" animName="Copycat" splashSprite="CopycatSplash"
       startingBrands="None,None"></Stats>
   </Being>
 </Beings>
