@@ -1,14 +1,6 @@
-function CoolStepSlash (spell)
+function MirrorImage (spell)
 	BoilerplateSpellIntro(spell)
-	package.cpath = "D:\\Games\\Steam\\steamapps\\common\\One Step From Eden\\OSFE_Data\\StreamingAssets\\Mods\\Default Mod\\?.dll"
-	print("cpath is:")
-	print(package.cpath)
-	print("path is:")
-	print(package.path)
 
-	require("Lib")
-	PrintFunction();
-	print("AAAA")
 	-- local thing = spell.ctrl.GetType("System.Reflection.Assembly").LoadFile("./CsLibrary.dll")
 	
 
@@ -27,10 +19,25 @@ function CoolStepSlash (spell)
 end
 
 function BoilerplateSpellIntro(spell)
-		if (spell.introSound) then
-			spell.being.PlayOnce(spell.introSound)
+	local channelNum = StartChannel(spell)
+
+	if (spell.introSound) then
+		spell.being.PlayOnce(spell.introSound)
+	end
+	
+	if (spell.fireLoop == FireLoop.While) then
+		spell.beingAnim.SetBool("fireWhile", true)
+	end
+	
+	if (spell.fireAnim == true and spell.fireAnimLate == false) then
+		if (spell.fireLoop == FireLoop.Normal) then
+			spell.beingAnim.SetTrigger("fire")
 		end
-		WaitForSeconds(spell, spell.castDuration)
+	end
+
+	if (spell.introDelay > 0) then
+		WaitForSeconds(spell, spell.introDelay)
+	end
 end
 
 function BoilerplateSpellOutro(spell)

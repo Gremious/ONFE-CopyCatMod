@@ -1,36 +1,149 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Spells>
-  <Spell itemID="PlaceholderWeapon">
-    <Stats cooldown="0.5"></Stats>
-    <HitAllies></HitAllies>
-    <HitEnemies></HitEnemies>
-    <HitSelf></HitSelf>
-    <HitStructures></HitStructures>
-    <Name>Placeholder Weapon</Name>
-    <Tags>Weapon</Tags>
-    <Unlock></Unlock>
+  <Spell itemID="EmptySpell">
+    <!--   
+    animCast - Animation name to play on spell cast
+    animHit - Animation name to play on spell hitting target
+    animBlast - Animation name to play on the location the spell lands, regardless if it hits anything
+    animShot - Bullet/Shot animation to play
+    animObj - Anything that's not a bullet: Bombs, Turrets (summons), Hazel boss' crushers, etc. 
+    animWarning - The "danger/catch/heal" tile animation that plays on the tile the spell will land on. 
+    arcType - The arc the spell shot will make while traveling: Normal, Wild, WildBi, or CastSlot. See Arc() in Projectile.cs.
+    bending - The size of the bend in the arc
+    castSound - Sound to play on cast
+    cooldown - Cooldown before the spell can be cast again. Usually used on weapons.
+    dashDistance - ???
+    dashHeight - ???
+    destroyOnDeath - Destroy spell if the being that cast it dies (usually used for enemmy spells)
+    effectLayer - If true, adds the spell to the "Effects" sorting layer in the spriteRenderer. What impact that actually has, idk.
+    faceVelocity
+    fireAnim - Whether to trigger the weapon-firing animation (e.g. for laser shots)
+    fireAnimLate - Whether to trigger the weapon-firing animation, but a bit later.
+    fireLoop - Whether to trigger and loop the weapon firing animation. Can be Normal, PerShot, PerTile or While.
+    hitSound - Sound to play on hit.
+    hitboxHeight -  Hitbox height in tiles. Defaults to 1.
+    hitboxWidth - Hitbox width in tiles. Defaults to 1.
+    hitboxOffsetX - The X offset of the spell. e.g. whether a shot will be fired from a tile above or below.
+    hitboxOffsetY - The Y offset of the spell. e.g. whether a shot will be fired from a tile behind or in front.
+    introDelay - Time before spell actually activates.
+    introSound - Sound to play
+    lineTracer
+    onHitTriggerArts
+    pierceDefense
+    pierceShield
+    recoveryTime
+    setToGunPoint
+    shotSound
+    slashLocation
+    spawnOffsetX
+    spawnOffsetY
+    timeToTravel
+    warningSound
+    yVariance
+    -->
+    <Stats></Stats>
+    <!--Register a lua function by name to be called on cast-->
     <Action></Action>
-    <Description>Throw blades at enemies.</Description>
-    <Meta>Fires bouncing blades.</Meta>
-    <Flavor>&lt;b&gt;FLAVOR&lt;/b&gt; text.</Flavor>
+    <!--Duration of the blast effect when spell hits-->
+    <BlastDuration></BlastDuration>
+    <!--Spell Brand (Anima, Slashfik, etc.)-->
     <Brand></Brand>
-    <Mana>0</Mana>
-    <Damage>60</Damage>
+    <!--Freeze duration before the spell is cast-->
+    <CastDelay></CastDelay>
+    <!--Unfrozen duration before the spell is cast-->
+    <CastDuration></CastDuration>
+    <!--Damage-->
+    <Damage></Damage>
+    <!--Description-->
+    <Description></Description>
+    <!--False: Piercing. True: Not Piercing. Default: Piercing-->
+    <DestroyOnHit></DestroyOnHit>
+    <!--On-kill effect (see ShisoGun in spells.xml)-->
+    <Execute></Execute>
+    <!--Spell flavortext-->
+    <Flavor></Flavor>
+    <!--Action to do if you have flow (i.e. flowcast)-->
+    <Flow></Flow>
+    <!--Can hit allies. Default: false-->
+    <HitAllies></HitAllies>
+    <!--Can hit enemies. Default: false-->
+    <HitEnemies></HitEnemies>
+    <!--Can hit self. Default: false-->
+    <HitSelf></HitSelf>
+    <!--Can hit structures. Default: false-->
+    <HitStructures></HitStructures>
+    <!--Effect while in cast slot. See any ring spell.-->
+    <Hold></Hold>
+    <!--Location spell will hit, see location.cs. Also see Shape.cs for shape spell will hit in said location (e.g. Crossfire spell).-->
+    <Location></Location>
+    <!--Mana cost-->
+    <Mana></Mana>
+    <!--???-->
+    <MetaDISABLED></MetaDISABLED>
+    <!--Name of Spell-->
+    <Name></Name>
+    <!--Action to do on spell cast. e.g. gain Flow or Consume.-->
+    <OnCast></OnCast>
+    <!--Action to do when spell hits a target. e.g. Apply Frost or Root-->
+    <OnHit></OnHit>
+    <!--
+    Creates an arbitrary parameter(s) that you can use in your lua action, e.g.:
+    xml:
+    <Params SuperCoolNumber="7"></Params>
+    
+    lua:
+    if (spell.HasParam("SuperCoolNumber")) then
+		localCoolNumber = tonumber(spell.Param("SuperCoolNumber"))
+    end
+    -->
+    <Params></Params>
+    <!--
+      0 - Gray/Colorless (Common)
+      1 - Blue (Rare)
+      2 - Purple (Epic)
+      3 - Golden (Legendary)
+      4 - Rainbow (Calamity)
+    -->
+    <Rarity></Rarity>
+    <!--Number of shots to fire-->
     <Shots></Shots>
-    <Tiles></Tiles>
-    <Location>Current</Location>
-    <TimeBetweenShots>0</TimeBetweenShots>
-    <ShotVelocity>400</ShotVelocity>
-    <ShotDuration>1</ShotDuration>
+    <!--Duration (in seconds) a shot will stay on screen-->
+    <ShotDuration></ShotDuration>
+    <!--Speed of shot-->
+    <ShotVelocity></ShotVelocity>
+    <!--Time between casting and the first shot-->
     <ShotDelay></ShotDelay>
-    <CastDelay>0</CastDelay>
-    <DestroyOnHit>true</DestroyOnHit>
-    <OnCast value="BladeThrow" amount="1">CastSpell</OnCast>
+    <!--Time between any shot and the next one-->
+    <TimeBetweenShots></TimeBetweenShots>
+    <Tags></Tags>
+    <Tiles></Tiles>
+    <TouchTile></TouchTile>
+    <TrinityCast></TrinityCast>
+    <WarningDuration></WarningDuration>
+  </Spell>
+
+  <Spell itemID="MirrorImage">
+    <!--Your comment-->
+    <Stats cooldown="1"></Stats>
+    <HitSelf>true</HitSelf>
+    <Name>Mirror Image</Name>
+    <Tags>Weapon</Tags>
+    <Description>Freeze for 1 second to add a copy of the last cast spell to your deck. It costs 1, has halved damage, and Consume.</Description>
+    <Meta>Basic attack - Freeze and add a weaker spell copy.</Meta>
+    <Flavor>Nyan?</Flavor>
+    <Mana>1</Mana>
+    <!--Your comment-->
+    <Damage>Zero</Damage>
+    <Shots>1</Shots>
+    <Tiles>0</Tiles>
+    <Location>Current</Location>
+    <Action>MirrorImage</Action>
+    <CastDelay>0.5</CastDelay>
   </Spell>
   <Spell itemID="ModSpell">
     <Stats introSound="woosh_large" recoveryTime=".5" animBlast="FireGunBlast" setToGunPoint="None"></Stats>
     <HitAllies></HitAllies>
-    <HitEnemies>true</HitEnemies> 
+    <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
     <HitStructures>true</HitStructures>
     <Name>Mod Spell</Name>
@@ -53,4 +166,5 @@
     <BlastDuration>0</BlastDuration>
     <DestroyOnHit></DestroyOnHit>
   </Spell>
+
 </Spells>

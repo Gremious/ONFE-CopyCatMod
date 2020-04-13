@@ -6,7 +6,7 @@
     <Tags>Campaign, Default, Unlock</Tags>
     <Description>A mysterious traveler, lookin for Eden's riches to copy all for herself.</Description>
     <Flavor>A snap of the fingers is all she needs.</Flavor>
-    <Weapon>PlaceholderWeapon</Weapon>
+    <Weapon>MirrorImage</Weapon>
     <Health>900</Health>
     <MaxHealth>900</MaxHealth>
     <Money>33</Money>
